@@ -1,4 +1,4 @@
-﻿# Calculadora básica v1.0.2
+﻿# Calculadora básica v1.0.3
 Calculadora básica realizada en .net framework 4.7, utilizando Windows forms.  
 Esta calculadora realiza las siguientes operaciones: 
 - Suma
