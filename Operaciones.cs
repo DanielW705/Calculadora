@@ -9,44 +9,46 @@ namespace Calculadora_V2
     class Operaciones
     {
         #region Atributos
-        private double resultado = 0 ;
+        private double resultado = 0;
         #endregion
         #region Constructor
         public Operaciones()
         { }
         #endregion
         #region Metodos
-        public string Suma(string num1, string num2)
+        public double Suma(string num1, string num2)
         {
             resultado = double.Parse(num1) + double.Parse(num2);
-            return Convert.ToString(resultado);
+            return resultado;
         }
-        public string Resta(string num1, string num2)
+        public double Resta(string num1, string num2)
         {
             resultado = double.Parse(num1) - double.Parse(num2);
-            return Convert.ToString(resultado);
+            return resultado;
         }
-        public string Multiplicacion(string num1, string num2)
+        public double Multiplicacion(string num1, string num2)
         {
             resultado = double.Parse(num1) * double.Parse(num2);
-            return Convert.ToString(resultado);
+            return resultado;
         }
-        public string Division(string num1, string num2)
+        public bool Division(string num1, string num2, out double res)
         {
-            if (num1 != "0" && num2 == "0" || num1 != "0" && num2=="-0") 
+            if (num2 == "0" || num2 == "-0")
             {
-                return ("Math error");
+                res = 0;
+                return false;
             }
             else
             {
                 resultado = double.Parse(num1) / double.Parse(num2);
-                return Convert.ToString(resultado);
+                res = resultado;
+                return true;
             }
         }
-        public string Modulo(string num1, string num2)
+        public double Modulo(string num1, string num2)
         {
             resultado = double.Parse(num1) % double.Parse(num2);
-            return Convert.ToString(resultado);
+            return resultado;
         }
         #endregion
         #region Eventos
