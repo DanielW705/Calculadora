@@ -51,10 +51,11 @@
             this.buttoncambiosigno = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.bntMmas = new System.Windows.Forms.Button();
-            this.btnMmenos = new System.Windows.Forms.Button();
             this.btnMres = new System.Windows.Forms.Button();
+            this.btnMmenos = new System.Windows.Forms.Button();
+            this.bntMmas = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.MClean = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -69,7 +70,7 @@
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.ReadOnly = true;
-            this.txtResultado.Size = new System.Drawing.Size(268, 49);
+            this.txtResultado.Size = new System.Drawing.Size(268, 77);
             this.txtResultado.TabIndex = 19;
             this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -78,7 +79,7 @@
             this.button1.AllowDrop = true;
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 87);
+            this.button1.Location = new System.Drawing.Point(3, 137);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(37, 26);
             this.button1.TabIndex = 1;
@@ -91,7 +92,7 @@
             this.button2.AllowDrop = true;
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(46, 87);
+            this.button2.Location = new System.Drawing.Point(46, 137);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(37, 26);
             this.button2.TabIndex = 2;
@@ -104,7 +105,7 @@
             this.button3.AllowDrop = true;
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(89, 87);
+            this.button3.Location = new System.Drawing.Point(89, 137);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(39, 26);
             this.button3.TabIndex = 3;
@@ -117,7 +118,7 @@
             this.button4.AllowDrop = true;
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(3, 47);
+            this.button4.Location = new System.Drawing.Point(3, 77);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(37, 26);
             this.button4.TabIndex = 4;
@@ -130,7 +131,7 @@
             this.button5.AllowDrop = true;
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(46, 47);
+            this.button5.Location = new System.Drawing.Point(46, 77);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(37, 26);
             this.button5.TabIndex = 5;
@@ -143,7 +144,7 @@
             this.button7.AllowDrop = true;
             this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(3, 7);
+            this.button7.Location = new System.Drawing.Point(3, 17);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(37, 26);
             this.button7.TabIndex = 7;
@@ -156,7 +157,7 @@
             this.button8.AllowDrop = true;
             this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(46, 7);
+            this.button8.Location = new System.Drawing.Point(46, 17);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(37, 26);
             this.button8.TabIndex = 8;
@@ -169,7 +170,7 @@
             this.button9.AllowDrop = true;
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(89, 7);
+            this.button9.Location = new System.Drawing.Point(89, 17);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(39, 26);
             this.button9.TabIndex = 9;
@@ -182,7 +183,7 @@
             this.button0.AllowDrop = true;
             this.button0.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button0.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button0.Location = new System.Drawing.Point(3, 127);
+            this.button0.Location = new System.Drawing.Point(3, 198);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(37, 26);
             this.button0.TabIndex = 0;
@@ -195,7 +196,7 @@
             this.buttonIgual.AllowDrop = true;
             this.buttonIgual.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonIgual.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonIgual.Location = new System.Drawing.Point(89, 128);
+            this.buttonIgual.Location = new System.Drawing.Point(89, 206);
             this.buttonIgual.Name = "buttonIgual";
             this.buttonIgual.Size = new System.Drawing.Size(39, 23);
             this.buttonIgual.TabIndex = 18;
@@ -208,7 +209,7 @@
             this.buttonRes.AllowDrop = true;
             this.buttonRes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonRes.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRes.Location = new System.Drawing.Point(46, 3);
+            this.buttonRes.Location = new System.Drawing.Point(46, 7);
             this.buttonRes.Name = "buttonRes";
             this.buttonRes.Size = new System.Drawing.Size(37, 34);
             this.buttonRes.TabIndex = 13;
@@ -221,7 +222,7 @@
             this.buttonMul.AllowDrop = true;
             this.buttonMul.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonMul.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMul.Location = new System.Drawing.Point(3, 3);
+            this.buttonMul.Location = new System.Drawing.Point(3, 7);
             this.buttonMul.Name = "buttonMul";
             this.buttonMul.Size = new System.Drawing.Size(37, 34);
             this.buttonMul.TabIndex = 12;
@@ -234,7 +235,7 @@
             this.buttonSum.AllowDrop = true;
             this.buttonSum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonSum.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSum.Location = new System.Drawing.Point(3, 43);
+            this.buttonSum.Location = new System.Drawing.Point(3, 55);
             this.buttonSum.Name = "buttonSum";
             this.buttonSum.Size = new System.Drawing.Size(37, 34);
             this.buttonSum.TabIndex = 14;
@@ -247,7 +248,7 @@
             this.buttonDIv.AllowDrop = true;
             this.buttonDIv.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonDIv.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDIv.Location = new System.Drawing.Point(46, 43);
+            this.buttonDIv.Location = new System.Drawing.Point(46, 55);
             this.buttonDIv.Name = "buttonDIv";
             this.buttonDIv.Size = new System.Drawing.Size(37, 34);
             this.buttonDIv.TabIndex = 15;
@@ -261,7 +262,7 @@
             this.buttonMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel2.SetColumnSpan(this.buttonMod, 2);
             this.buttonMod.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMod.Location = new System.Drawing.Point(3, 84);
+            this.buttonMod.Location = new System.Drawing.Point(3, 152);
             this.buttonMod.Name = "buttonMod";
             this.buttonMod.Size = new System.Drawing.Size(79, 31);
             this.buttonMod.TabIndex = 16;
@@ -275,7 +276,7 @@
             this.buttonLimp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel2.SetColumnSpan(this.buttonLimp, 2);
             this.buttonLimp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLimp.Location = new System.Drawing.Point(5, 126);
+            this.buttonLimp.Location = new System.Drawing.Point(5, 203);
             this.buttonLimp.Name = "buttonLimp";
             this.buttonLimp.Size = new System.Drawing.Size(75, 28);
             this.buttonLimp.TabIndex = 17;
@@ -288,7 +289,7 @@
             this.button6.AllowDrop = true;
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(89, 47);
+            this.button6.Location = new System.Drawing.Point(89, 77);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(39, 26);
             this.button6.TabIndex = 6;
@@ -301,7 +302,7 @@
             this.buttonpoint.AllowDrop = true;
             this.buttonpoint.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonpoint.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonpoint.Location = new System.Drawing.Point(89, 127);
+            this.buttonpoint.Location = new System.Drawing.Point(89, 198);
             this.buttonpoint.Name = "buttonpoint";
             this.buttonpoint.Size = new System.Drawing.Size(39, 26);
             this.buttonpoint.TabIndex = 11;
@@ -314,7 +315,7 @@
             this.buttoncambiosigno.AllowDrop = true;
             this.buttoncambiosigno.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttoncambiosigno.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttoncambiosigno.Location = new System.Drawing.Point(46, 127);
+            this.buttoncambiosigno.Location = new System.Drawing.Point(46, 198);
             this.buttoncambiosigno.Name = "buttoncambiosigno";
             this.buttoncambiosigno.Size = new System.Drawing.Size(37, 26);
             this.buttoncambiosigno.TabIndex = 10;
@@ -341,14 +342,14 @@
             this.tableLayoutPanel1.Controls.Add(this.button3, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.button0, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 58);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 86);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(131, 160);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(131, 243);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -357,27 +358,62 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Controls.Add(this.MClean, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.btnMres, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.btnMmenos, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.buttonIgual, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.buttonMul, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.buttonRes, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.buttonSum, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.buttonDIv, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.buttonMod, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.buttonLimp, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.bntMmas, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.buttonLimp, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.buttonMod, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.buttonIgual, 2, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(140, 58);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(140, 86);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 4;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(131, 160);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(131, 243);
             this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // btnMres
+            // 
+            this.btnMres.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMres.Location = new System.Drawing.Point(89, 103);
+            this.btnMres.Name = "btnMres";
+            this.btnMres.Size = new System.Drawing.Size(39, 34);
+            this.btnMres.TabIndex = 21;
+            this.btnMres.Text = "MR";
+            this.btnMres.UseVisualStyleBackColor = true;
+            this.btnMres.Click += new System.EventHandler(this.btnMres_Click);
+            // 
+            // btnMmenos
+            // 
+            this.btnMmenos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMmenos.Location = new System.Drawing.Point(89, 55);
+            this.btnMmenos.Name = "btnMmenos";
+            this.btnMmenos.Size = new System.Drawing.Size(39, 34);
+            this.btnMmenos.TabIndex = 20;
+            this.btnMmenos.Text = "M-";
+            this.btnMmenos.UseVisualStyleBackColor = true;
+            this.btnMmenos.Click += new System.EventHandler(this.btnMmenos_Click);
+            // 
+            // bntMmas
+            // 
+            this.bntMmas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bntMmas.Location = new System.Drawing.Point(89, 7);
+            this.bntMmas.Name = "bntMmas";
+            this.bntMmas.Size = new System.Drawing.Size(39, 34);
+            this.bntMmas.TabIndex = 19;
+            this.bntMmas.Text = "M+";
+            this.bntMmas.UseVisualStyleBackColor = true;
+            this.bntMmas.Click += new System.EventHandler(this.bntMmas_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -393,47 +429,25 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(274, 221);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(274, 332);
             this.tableLayoutPanel3.TabIndex = 20;
             // 
-            // bntMmas
+            // MClean
             // 
-            this.bntMmas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bntMmas.Location = new System.Drawing.Point(89, 3);
-            this.bntMmas.Name = "bntMmas";
-            this.bntMmas.Size = new System.Drawing.Size(39, 34);
-            this.bntMmas.TabIndex = 19;
-            this.bntMmas.Text = "M+";
-            this.bntMmas.UseVisualStyleBackColor = true;
-            this.bntMmas.Click += new System.EventHandler(this.bntMmas_Click);
-            // 
-            // btnMmenos
-            // 
-            this.btnMmenos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnMmenos.Location = new System.Drawing.Point(89, 43);
-            this.btnMmenos.Name = "btnMmenos";
-            this.btnMmenos.Size = new System.Drawing.Size(39, 34);
-            this.btnMmenos.TabIndex = 20;
-            this.btnMmenos.Text = "M-";
-            this.btnMmenos.UseVisualStyleBackColor = true;
-            this.btnMmenos.Click += new System.EventHandler(this.btnMmenos_Click);
-            // 
-            // btnMres
-            // 
-            this.btnMres.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnMres.Location = new System.Drawing.Point(89, 83);
-            this.btnMres.Name = "btnMres";
-            this.btnMres.Size = new System.Drawing.Size(39, 34);
-            this.btnMres.TabIndex = 21;
-            this.btnMres.Text = "MR";
-            this.btnMres.UseVisualStyleBackColor = true;
-            this.btnMres.Click += new System.EventHandler(this.btnMres_Click);
+            this.MClean.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MClean.Location = new System.Drawing.Point(89, 151);
+            this.MClean.Name = "MClean";
+            this.MClean.Size = new System.Drawing.Size(39, 34);
+            this.MClean.TabIndex = 22;
+            this.MClean.Text = "MC";
+            this.MClean.UseVisualStyleBackColor = true;
+            this.MClean.Click += new System.EventHandler(this.MClean_Click);
             // 
             // CalculadoraV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 221);
+            this.ClientSize = new System.Drawing.Size(274, 332);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CalculadoraV2";
@@ -475,6 +489,7 @@
         private System.Windows.Forms.Button btnMres;
         private System.Windows.Forms.Button btnMmenos;
         private System.Windows.Forms.Button bntMmas;
+        private System.Windows.Forms.Button MClean;
     }
 }
 

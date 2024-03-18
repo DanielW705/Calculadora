@@ -301,16 +301,27 @@ namespace Calculadora_V2
             txtResultado.Text = varM.ToString();
         }
 
+        private void MClean_Click(object sender, EventArgs e)
+        {
+            varM = 0;
+            txtResultado.Text = string.Empty;
+
+        }
+
         private void btnMmenos_Click(object sender, EventArgs e)
         {
-            if (isResult)
+            if (isResult || isAnswered)
                 varM -= ans;
+            else if(!firsNumber)
+                varM -= double.Parse(txtResultado.Text);
         }
 
         private void bntMmas_Click(object sender, EventArgs e)
         {
-            if (isResult)
+            if (isResult || isAnswered)
                 varM += ans;
+            else if(!firsNumber)
+                varM += double.Parse(txtResultado.Text);
         }
 
         private void Buttoncambiosigno_Click(object sender, EventArgs e)
